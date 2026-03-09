@@ -17,3 +17,14 @@ cargo clippy
 # Format
 cargo fmt
 ```
+
+## Post-Create Setup
+
+After creating a repo from this template, configure the following secrets
+in **Settings > Secrets and variables > Actions**:
+
+| Secret | Required | Used by |
+|--------|----------|---------|
+| `CODEBERG_TOKEN` | For mirroring | mirror workflow |
+
+Without this secret, the mirror workflow will fail silently.
