@@ -25,6 +25,8 @@ in **Settings > Secrets and variables > Actions**:
 
 | Secret | Required | Used by |
 |--------|----------|---------|
+| `ANTHROPIC_API_KEY` | For CI fixer | pr-check-fixer workflow |
+| `DISCORD_WEBHOOK_URL` | For notifications | pr-check-fixer workflow |
 | `CODEBERG_TOKEN` | For mirroring | mirror workflow |
 
-Without this secret, the mirror workflow will fail silently.
+Without these secrets, the corresponding workflows will fail silently.
